@@ -2,6 +2,6 @@
   display: grid;
   background-color: rgb(248, 248, 248);
   border-radius: 15px;
-  padding: 20px 0px;
-  max-width: 600px;
+  padding: 20px 10px;
+  width: 100%;
 }

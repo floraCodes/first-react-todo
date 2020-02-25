@@ -1,9 +1,8 @@
 .todo-form {
   background-color: rgb(248, 248, 248);
   border-radius: 15px;
-  padding: 20px 50px;
-  align-self: center;
-  max-width: 350px;
+  padding: 20px 10px;
+  width: 100%;
 }
 
 h3 {
