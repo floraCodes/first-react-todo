@@ -20,9 +20,6 @@ function App() {
   }, [todos]);
 
   function addTodo(todo) {
-    //In order to add the todo to the list, we're going to create a new todos array
-    //by calling the setTodos() function and then passing in an array with the new todo
-    //added to the beginning and the old todos array spreaded after it.
     setTodos([todo, ...todos]);
   }
 
