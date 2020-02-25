@@ -11,7 +11,7 @@ function Todo({ todo, toggleComplete, removeTodo }) {
   return (
     <div className="todo-div">
       <label className="checkbox-label">
-        <input type="checkbox" />
+        <input type="checkbox" checked={todo.completed} />
         <span className="checkbox-custom" onClick={handleCheckboxClick}></span>
       </label>
       <li
