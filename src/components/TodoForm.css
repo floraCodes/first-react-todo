@@ -4,7 +4,6 @@
   padding: 20px 10px;
   width: 100%;
 }
-
 h3 {
   text-align: center;
   color: coral;
@@ -31,7 +30,6 @@ h3 {
   color: white;
   font-weight: 800;
 }
-
 .todo-form button:hover {
   cursor: pointer;
 }

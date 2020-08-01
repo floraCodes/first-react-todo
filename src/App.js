@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from "react";
-import TodoList from "./components/TodoList";
-import TodoForm from "./components/TodoForm";
-import "./App.css";
+import React, { useState, useEffect } from 'react';
+import TodoList from './components/TodoList';
+import TodoForm from './components/TodoForm';
+import './App.css';
+import { initialTodos } from './utils/initialTodos';
 
-const LOCAL_STORAGE_KEY = "react-todo-list-todos";
+const LOCAL_STORAGE_KEY = 'react-todo-list-todos';
 
 function App() {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(initialTodos);
 
   useEffect(() => {
     const storageTodos = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY));
@@ -25,7 +26,7 @@ function App() {
 
   function toggleComplete(id) {
     setTodos(
-      todos.map(todo => {
+      todos.map((todo) => {
         if (todo.id === id) {
           return {
             ...todo,
@@ -38,7 +39,7 @@ function App() {
   }
 
   function removeTodo(id) {
-    setTodos(todos.filter(todo => todo.id !== id));
+    setTodos(todos.filter((todo) => todo.id !== id));
   }
 
   return (
