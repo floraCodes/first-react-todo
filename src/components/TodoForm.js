@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import uuid from "uuid";
-import "./TodoForm.css";
+import React, { useState } from 'react';
+import uuid from 'uuid';
+import './TodoForm.css';
 
 function TodoForm({ addTodo }) {
   const [todo, setTodo] = useState({
-    id: "",
-    task: "",
+    id: '',
+    task: '',
     completed: false
   });
 
@@ -18,7 +18,7 @@ function TodoForm({ addTodo }) {
     if (todo.task.trim()) {
       addTodo({ ...todo, id: uuid.v4() });
 
-      setTodo({ ...todo, task: "" });
+      setTodo({ ...todo, task: '' });
     }
   }
 
@@ -32,7 +32,7 @@ function TodoForm({ addTodo }) {
           value={todo.task}
           onChange={handleTaskInputChange}
         />
-        <button type="submit">Submit</button>
+        <button type="submit">Add Todo</button>
       </form>
     </div>
   );
